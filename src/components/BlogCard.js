@@ -32,7 +32,7 @@ export default function BlogCard({
       const { data } = await axios.delete(`https://qurinomsolution.onrender.com/api/v1/blog/delete-blog/${id}`);
       if (data?.success) {
         alert("Blog Deleted");
-        navigate(window.location.reload());
+        navigate(blogs);
       }
     } catch (error) {
       console.log(error);
