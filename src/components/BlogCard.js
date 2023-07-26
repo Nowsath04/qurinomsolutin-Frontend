@@ -30,7 +30,7 @@ export default function BlogCard({
   const handleDelete = async () => {
     try {
       const { data } = await axios.delete(
-        `https://qurinomsolution.onrender.com/api/v1/blog/delete-blog/${id}`
+        `https://qurinomsolution.onrender.com/api/v1/post/delete-post/${id}`
       );
       if (data?.success) {
         alert("Blog Deleted");

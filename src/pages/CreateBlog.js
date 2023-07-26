@@ -23,7 +23,7 @@ const CreateBlog = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://qurinomsolution.onrender.com/api/v1/blog/create-blog",
+        "https://qurinomsolution.onrender.com/api/v1/post/create-post",
         {
           title: inputs.title,
           description: inputs.description,
@@ -60,7 +60,7 @@ const CreateBlog = () => {
             padding={3}
             color="gray"
           >
-            Create A Pots
+            Create A Posts
           </Typography>
           <InputLabel
             sx={{ mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" }}

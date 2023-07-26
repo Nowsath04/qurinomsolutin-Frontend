@@ -9,7 +9,7 @@ const UserBlogs = () => {
     try {
       const id = localStorage.getItem("userId");
       const { data } = await axios.get(
-        `https://qurinomsolution.onrender.com/api/v1/blog/user-blog/${id}`
+        `https://qurinomsolution.onrender.com/api/v1/post/user-post/${id}`
       );
       if (data?.success) {
         setBlogs(data?.userBlog.blogs);
