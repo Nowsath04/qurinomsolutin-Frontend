@@ -12,7 +12,7 @@ const BlogDetails = () => {
   const getBlogDetail = async () => {
     try {
       const { data } = await axios.get(
-        `https://qurinomsolution.onrender.com/api/post/get-post/${id}`
+        `https://qurinomsolution.onrender.com/api/v1/blog/get-blog/${id}`
       );
       if (data?.success) {
         setBlog(data?.blog);
@@ -43,7 +43,7 @@ const BlogDetails = () => {
     e.preventDefault();
     try {
       const { data } = await axios.put(
-        `https://qurinomsolution.onrender.com/api/post/update-post/${id}`,
+        `https://qurinomsolution.onrender.com/api/v1/blog/update-blog/${id}`,
         {
           title: inputs.title,
           description: inputs.description,

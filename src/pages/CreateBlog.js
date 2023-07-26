@@ -23,7 +23,7 @@ const CreateBlog = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://qurinomsolution.onrender.com/api/post/create-post",
+        "https://qurinomsolution.onrender.com/api/v1/blog/create-blog",
         {
           title: inputs.title,
           description: inputs.description,

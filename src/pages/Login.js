@@ -27,7 +27,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://qurinomsolution.onrender.com/api/user/login",
+        "https://qurinomsolution.onrender.com/api/v1/user/login",
         {
           email: inputs.email,
           password: inputs.password,

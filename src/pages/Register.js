@@ -25,7 +25,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://qurinomsolution.onrender.com/api/user/register",
+        "https://qurinomsolution.onrender.com/api/v1/user/register",
         {
           username: inputs.name,
           email: inputs.email,
