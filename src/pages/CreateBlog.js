@@ -22,15 +22,12 @@ const CreateBlog = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post(
-        "https://qurinomsolution.onrender.com/api/v1/post/create-post",
-        {
-          title: inputs.title,
-          description: inputs.description,
-          image: inputs.image,
-          user: id,
-        }
-      );
+      const { data } = await axios.post("https://qurinomsolution.onrender.com/api/v1/blog/create-blog", {
+        title: inputs.title,
+        description: inputs.description,
+        image: inputs.image,
+        user: id,
+      });
       if (data?.success) {
         toast.success("Blog Created");
         navigate("/my-blogs");
@@ -60,7 +57,7 @@ const CreateBlog = () => {
             padding={3}
             color="gray"
           >
-            Create A Posts
+            Create A Pots
           </Typography>
           <InputLabel
             sx={{ mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" }}
