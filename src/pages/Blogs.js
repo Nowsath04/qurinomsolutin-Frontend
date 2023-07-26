@@ -6,7 +6,9 @@ const Blogs = () => {
   //get blogs
   const getAllBlogs = async () => {
     try {
-      const { data } = await axios.get("https://qurinomsolution.onrender.com/api/v1/blog/all-blog");
+      const { data } = await axios.get(
+        "https://qurinomsolution.onrender.com/api/post/all-post"
+      );
       if (data?.success) {
         setBlogs(data?.blogs);
       }
