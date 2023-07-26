@@ -1,12 +1,14 @@
 import Header from "./components/Header";
 import { Routes, Route } from "react-router-dom";
+
+import { Toaster } from "react-hot-toast";
 import Blogs from "./pages/Blogs";
+import UserBlogs from "./pages/UserBlogs";
+import BlogDetails from "./pages/BlogDetails";
+import CreateBlog from "./pages/CreateBlog";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import UserBlogs from "./pages/UserBlogs";
-import CreateBlog from "./pages/CreateBlog";
-import BlogDetails from "./pages/BlogDetails";
-import { Toaster } from "react-hot-toast";
+
 function App() {
   return (
     <>
