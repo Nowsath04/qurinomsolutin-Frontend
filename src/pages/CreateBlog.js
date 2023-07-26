@@ -60,7 +60,7 @@ const CreateBlog = () => {
             padding={3}
             color="gray"
           >
-            Create A Pots
+            Create a Posts
           </Typography>
           <InputLabel
             sx={{ mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" }}

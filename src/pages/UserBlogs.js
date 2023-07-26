@@ -38,7 +38,15 @@ const UserBlogs = () => {
           />
         ))
       ) : (
-        <h1>You Havent Created a blog</h1>
+        <h1
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            paddingTop: "20px",
+          }}
+        >
+          No Posts Here
+        </h1>
       )}
     </div>
   );

@@ -34,6 +34,7 @@ export default function BlogCard({
       );
       if (data?.success) {
         alert("Blog Deleted");
+        toast.success("deleted Successfully");
         navigate("/blogs");
       }
     } catch (error) {
